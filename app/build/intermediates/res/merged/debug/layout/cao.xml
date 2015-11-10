@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/user_info_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#fff00f"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_chat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user_chat_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:text="与...聊天中"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <ListView
+            android:id="@+id/user_chat_content_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/user_chat_extra_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_chat_content_edt"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_margin="10dp" />
+        
+        <Button 
+            android:id="@+id/user_chat_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/lz/work/Android/AndroidStudioProjects/ASpark/app/src/main/res/layout/cao.xml -->

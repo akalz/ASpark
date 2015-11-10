@@ -1,0 +1,67 @@
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingpanellayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/user_info_ll"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#fff00f"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_chat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/user_chat_title_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            android:text="聊天中"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ListView
+            android:id="@+id/user_chat_content_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/user_chat_extra_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/user_char_sendfile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="发送文件" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_chat_content_edt"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_margin="10dp"
+            android:gravity="start" />
+
+        <Button
+            android:id="@+id/user_chat_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送" />
+    </LinearLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>
